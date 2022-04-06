@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+}
+.navbar-atas{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+.navbar-logo, .navbar-regis, .navbar-menu{
+    display: inline-block;
+}
+.navbar-menu-list, li{
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar-regis-masuk, .navbar-regis-daftar{
+    display: inline;
+
+}
+.navbar-logo{
+    text-align: left;
+}
+.navbar-menu{
+    padding-right:100px;
+    margin: 0;
+    position: relative;
+    transform: translateY(-130%);
+}
+.navbar-regis{
+    width: 15%;
+    text-align: right;
+    transform: translateY(-135%);
+}
+li{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.logo{
+    width: 100px;
+}
+
+.navbar-regis-masuk, .navbar-regis-daftar{
+    font-size: 20px;
+    border: 1px gray solid;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.navbar-regis-masuk:hover, .navbar-regis-daftar:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease-out;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.navbar-regis-space{
+    padding-right: 20px;
+    display: inline-block;
+}
+.border-article{
+    background-color: #3283da;
+    box-shadow: 0px -5px 5px #286ef0;
+    height: 500px;
+}
+.border-text{
+    height: 150px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    transform: translateY(150px);
+}
+.text{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.text-button{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border: 1px black solid;
+    background-color: rgb(248, 142, 50);
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.text-button:hover{
+    transform: translateY(-8px);
+    
+}
+footer{
+    height: 163px;
+    background-color: #b9c8f4;
+}
+.ian{
+    text-align: center;
+    margin: 0 auto;
+    
+}
