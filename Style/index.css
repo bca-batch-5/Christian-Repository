@@ -1,0 +1,147 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+svg:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.border-main {
+  background-color: #ffffff;
+  display: inline-block;
+  height: 100%;
+  transition: all 0.5s ease;
+  /* margin-left: 83px; */
+}
+.navbar-custom {
+  border-right: 1px rgb(203, 203, 203) solid;
+  top: 0;
+  left: -100px;
+  height: 100%;
+  width: 80px;
+  background-color: white;
+  position: fixed;
+  transition: all 0.5s ease;
+}
+.navbar-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.logo {
+  width: 100%;
+}
+.navbar-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-menu-list{
+    font-family: 'PT Serif', serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(209, 203, 118);
+    transition: all 1s ease;
+}
+
+.navbar-menu-list:hover{
+    color: rgb(255, 173, 66);
+    cursor: pointer;
+}
+.border-main-tombol{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 50px;
+}
+.border-main-text{
+    height: 85px;
+    /* border:  1px black solid; */
+    display: flex;
+}
+.text-private{
+    padding-top: 20px;
+    padding-left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+.add-text-private{
+    padding-left: 20px;
+}
+.email{
+    width: 219px;
+}
+.border-main-photo{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+.border-photo{
+    width: 90%;
+    align-items: center;
+    height: 90%;
+    background-image: url(Christian.jpeg);
+    margin-left: 15px;
+    border-radius: 100%;
+    background-position: center;
+}
+.Role-Text{
+    color: orange;
+}
+.cv-button{
+    text-decoration: none;
+    color: white;
+}
+.border-CV{
+    margin-top: 30px;
+    height: 50px;
+    background-color: black;
+    padding: 10px 10px 10px 15px;
+    border-radius: 10%;
+    width: 170px;
+}
+.border-footer{
+    padding-top: 50px;
+}
+.border-foot{
+    transition: all 0.5s ease;
+    background-color: rgba(203, 222, 252, 0.785);
+}
+.border-form{
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 992px){
+    .border-main-tombol{
+        display: none;
+    }   
+    .navbar-custom {
+        left: 0;
+      }
+    .border-main{
+        margin-left: 83px;
+    }
+    .border-foot{
+        margin-left: 78px;
+    }
+    .border-CV{
+        width: 180px;
+    }
+    .border-photo{
+        background-repeat: no-repeat;
+    }
+}

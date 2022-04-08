@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Biodata</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Favicon.png" />
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="Header">
+      <div class="navbar-custom" id="sideBar">
+        <div class="navbar-logo" id="logo">
+          <div>
+            <img src="./Assets/Favicon.png" alt="logo" class="logo" />
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <a href="#Header"><div class="navbar-menu-list">Home</div></a>
+          <a href="#foot"><div class="navbar-menu-list">Contact</div></a>
+        </div>
+      </div>
+    </header>
+    <div class="border-main" id="borderMain">
+      <div class="border-main-tombol" id="sidebar-tombol">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="16"
+            height="16"
+          >
+            <path
+              d="M5.22 14.78a.75.75 0 001.06-1.06L4.56 12h8.69a.75.75 0 000-1.5H4.56l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3a.75.75 0 000 1.06l3 3zm5.56-6.5a.75.75 0 11-1.06-1.06l1.72-1.72H2.75a.75.75 0 010-1.5h8.69L9.72 2.28a.75.75 0 011.06-1.06l3 3a.75.75 0 010 1.06l-3 3z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="border-main-text">
+        <div class="text-private" id="textPrivate">+6285920359733</div>
+        <div class="text-private email" id="email">ianbernard12@yahoo.com</div>
+      </div>
+      <div class="border-main-photo">
+        <div class="border-photo">
+          <img src="./Assets/Christian.jpeg" alt="" />
+        </div>
+      </div>
+      <article class="container">
+        <div class="row">
+          <div class="col">
+            <p style="margin: 0px">Hello, My Name is</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 style="padding-left: 5px">Christian Bernard</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4 style="padding-left: 5px; margin: 0px" class="Role-Text">
+              <strong>Full Stack Developer</strong>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p style="padding-left: 5px; margin: 0px">
+              I design and develop services for customers of all sizes,
+              specializing in creating stylish, modern websites, web services
+              and online stores.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="border-CV">
+            <a href="w3logo.jpg" download="CV" class="cv-button" target="_blank"
+              ><h4>Download CV</h4></a
+            >
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer id="foot">
+      <div class="container border-foot" id="borderFoot">
+        <div class="border-footer" id="borderFooter">
+          <h2>What's your story?</h2>
+          <h2>Get in touch</h2>
+        </div>
+        <div>
+          <p>
+            Always available for freelancing if the right project comes along,
+            Feel free to contact me.
+          </p>
+        </div>
+        <div>
+          <h4>Palmerah G1 Wisma 77, Indonesia-Jakarta.</h4>
+        </div>
+        <div>
+          <h4>ianbernard@support.com</h4>
+        </div>
+        <div>
+          <h4>+620811532995</h4>
+        </div>
+        <div class="border-form">
+          <div>
+            <h3>Say Something</h3>
+          </div>
+          <div style="margin-top: 20px;">
+            <form action="">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="FullName" required/>
+              <input style="margin-top: 10px;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject" required/>
+              <input style="margin-top: 10px;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required/>
+              <textarea style="margin-top: 10px;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type Comment"></textarea>
+              <button style="margin-top: 10px; margin-bottom: 10px;" type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./Scripts/indexScript.js"></script>
+</html>
