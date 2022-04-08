@@ -3,16 +3,16 @@ html {
   margin: 0;
   height: 100%;
 }
-svg{
-    width: 30px;
-    height: 30px;
+svg {
+  width: 30px;
+  height: 30px;
 }
-svg:hover{
-    cursor: pointer;
+svg:hover {
+  cursor: pointer;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .border-main {
@@ -42,106 +42,155 @@ a{
 .logo {
   width: 100%;
 }
-.navbar-menu{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.navbar-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.navbar-menu-list{
-    font-family: 'PT Serif', serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(209, 203, 118);
-    transition: all 1s ease;
+.navbar-menu-list {
+  font-family: "PT Serif", serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(209, 203, 118);
+  transition: all 1s ease;
 }
 
-.navbar-menu-list:hover{
-    color: rgb(255, 173, 66);
+.navbar-menu-list:hover {
+  color: rgb(255, 173, 66);
+  cursor: pointer;
+}
+.border-main-tombol {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 50px;
+}
+.border-main-text {
+  height: 85px;
+  /* border:  1px black solid; */
+  display: flex;
+}
+.text-private {
+  padding-top: 20px;
+  padding-left: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  transition: all 0.5s ease;
+}
+.add-text-private {
+  padding-left: 20px;
+}
+.email {
+  width: 219px;
+}
+.border-main-photo {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.border-photo {
+  width: 90%;
+  align-items: center;
+  height: 90%;
+  background-image: url(Christian.jpeg);
+  margin-left: 15px;
+  border-radius: 100%;
+  border: 1px rgb(163, 163, 163) solid;
+  background-position: center;
+}
+.Role-Text {
+  color: orange;
+}
+.cv-button {
+  text-decoration: none;
+  color: white;
+}
+.border-CV {
+  margin-top: 30px;
+  height: 50px;
+  background-color: black;
+  padding: 10px 10px 10px 15px;
+  border-radius: 10%;
+  width: 170px;
+}
+.button-download-cv {
+  display: none;
+}
+.border-footer {
+  padding-top: 50px;
+}
+.border-foot {
+  transition: all 0.5s ease;
+  background-color: rgba(203, 222, 252, 0.785);
+}
+.border-form {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    footer{
+        background-color: rgba(203, 222, 252, 0.785);
+    }
+  .border-main {
+    margin-left: 80px;
+    width: 94.6%;
+    background-image: url(../Assets/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .border-main-tombol {
+    display: none;
+  }
+  .navbar-custom {
+    left: 0;
+  }
+  .border-main-photo {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .border-photo {
+    width: 15%;
+  }
+  .border-foot {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 5%;
+    background-color: transparent;
+  }
+  .border-CV {
+    width: 180px;
+    display: none;
+  }
+  .button-download-cv {
+    margin-top: 10px;   
+    display:inline;
+    background-color: rgb(255, 188, 101);
+  }
+  .button-download-cv:hover{
+    background-color: rgb(255, 188, 101);
     cursor: pointer;
-}
-.border-main-tombol{
-    padding-left: 10px;
-    padding-top: 10px;
-    width: 50px;
-}
-.border-main-text{
-    height: 85px;
-    /* border:  1px black solid; */
-    display: flex;
-}
-.text-private{
-    padding-top: 20px;
-    padding-left: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    transition: all 0.5s ease;
-}
-.add-text-private{
-    padding-left: 20px;
-}
-.email{
-    width: 219px;
-}
-.border-main-photo{
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    
-}
-.border-photo{
-    width: 90%;
-    align-items: center;
-    height: 90%;
-    background-image: url(Christian.jpeg);
-    margin-left: 15px;
-    border-radius: 100%;
-    background-position: center;
-}
-.Role-Text{
-    color: orange;
-}
-.cv-button{
-    text-decoration: none;
+  }
+  .border-photo {
+    background-repeat: no-repeat;
+  }
+  .text-private {
     color: white;
-}
-.border-CV{
-    margin-top: 30px;
-    height: 50px;
-    background-color: black;
-    padding: 10px 10px 10px 15px;
-    border-radius: 10%;
-    width: 170px;
-}
-.border-footer{
-    padding-top: 50px;
-}
-.border-foot{
-    transition: all 0.5s ease;
-    background-color: rgba(203, 222, 252, 0.785);
-}
-.border-form{
-    margin-top: 50px;
-}
-
-@media screen and (min-width: 992px){
-    .border-main-tombol{
-        display: none;
-    }   
-    .navbar-custom {
-        left: 0;
-      }
-    .border-main{
-        margin-left: 83px;
-    }
-    .border-foot{
-        margin-left: 78px;
-    }
-    .border-CV{
-        width: 180px;
-    }
-    .border-photo{
-        background-repeat: no-repeat;
-    }
+    font-size: 15px;
+  }
+  .border-article {
+    padding: 0px 450px;
+    color: white;
+  }
+  .border-tombol-cv {
+    display: flex;
+    justify-content: center;
+  }
+  .border-article-text {
+    text-align: center;
+  }
+  .article-text {
+    color: white;
+  }
+  
 }

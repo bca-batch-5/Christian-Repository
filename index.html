@@ -60,44 +60,38 @@
         <div class="text-private email" id="email">ianbernard12@yahoo.com</div>
       </div>
       <div class="border-main-photo">
-        <div class="border-photo">
-          <img src="./Assets/Christian.jpeg" alt="" />
-        </div>
+        <div class="border-photo"></div>
       </div>
-      <article class="container">
-        <div class="row">
-          <div class="col">
-            <p style="margin: 0px">Hello, My Name is</p>
-          </div>
+      <article class="container border-article-text">
+        <div class="article-text">
+          <p style="margin: 0px">Hello, My Name is</p>
         </div>
-        <div class="row">
-          <div class="col">
-            <h2 style="padding-left: 5px">Christian Bernard</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h4 style="padding-left: 5px; margin: 0px" class="Role-Text">
-              <strong>Full Stack Developer</strong>
-            </h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p style="padding-left: 5px; margin: 0px">
-              I design and develop services for customers of all sizes,
-              specializing in creating stylish, modern websites, web services
-              and online stores.
-            </p>
-          </div>
+        <div class="article-text">
+          <h2 style="padding-left: 5px">Christian Bernard</h2>
         </div>
         <div>
+          <h4 style="padding-left: 5px; margin: 0px" class="Role-Text">
+            <strong>Full Stack Developer</strong>
+          </h4>
+        </div>
+        <div class="border-article">
+          <p style="padding-left: 5px; margin: 0px">
+            I design and develop services for customers of all sizes,
+            specializing in creating stylish, modern websites, web services and
+            online stores.
+          </p>
+        </div>
+        <div class="border-tombol-cv">
           <div class="border-CV">
-            <a href="w3logo.jpg" download="CV" class="cv-button" target="_blank"
+            <a href="CV.pdf" download="CV" class="cv-button" target="_blank"
               ><h4>Download CV</h4></a
             >
           </div>
         </div>
+        <button class="button-download-cv btn btn-secondary">
+            <a href="CV.pdf" download="CV" class="cv-button" target="_blank"
+              ><h4>Download CV</h4></a>
+        </button>
       </article>
     </div>
     <footer id="foot">
@@ -125,13 +119,45 @@
           <div>
             <h3>Say Something</h3>
           </div>
-          <div style="margin-top: 20px;">
-            <form action="">
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="FullName" required/>
-              <input style="margin-top: 10px;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject" required/>
-              <input style="margin-top: 10px;" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required/>
-              <textarea style="margin-top: 10px;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type Comment"></textarea>
-              <button style="margin-top: 10px; margin-bottom: 10px;" type="submit" class="btn btn-dark">Send Message</button>
+          <div style="margin-top: 20px">
+            <form>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="FullName"
+                required
+              />
+              <input
+                style="margin-top: 10px"
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Subject"
+                required
+              />
+              <input
+                style="margin-top: 10px"
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+                required
+              />
+              <textarea
+                style="margin-top: 10px"
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Type Comment"
+              ></textarea>
+              <button
+                style="margin-top: 10px; margin-bottom: 10px"
+                type="submit"
+                class="btn btn-dark"
+              >
+                Send Message
+              </button>
             </form>
           </div>
         </div>
