@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>API FAKE HOLDER JSON</h1>
+    <table>
+      <tbody id="body-table"></tbody>
+    </table>
+  </body>
+  <script>
+    var fetchData = async (url) => {
+      const data = await fetch(url);
+      const res = await data.json();
+      console.log(res);
+      // getData(res);
+      getDatatoTable(res);
+    };
+
+    fetchData("https://jsonplaceholder.typicode.com/users");
+
+    function getDatatoTable(response){
+        let result = '';
+        for(let i = 0; i < 5 ; i++){
+            let res = response[i];
+            console.log(res);
+            result +=`
+            <tr>
+                <td>${res.name}</td>
+                <td>${res.email}</td>
+                <td>${res.address.street}</td>
+                <td>${res.company.name}</td>
+                <td>${res.phone}</td>
+            </tr>
+            `;
+        }
+        console.log(result);
+        document.getElementById('body-table').innerHTML = result;
+    }
+  </script>
+</html>
