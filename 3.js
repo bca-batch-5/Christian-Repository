@@ -3,9 +3,10 @@ var Genap=[];
 const evenOdd = (nilai) =>{
     for(let i = 0; i < nilai.length; i++){
         if(nilai[i] %2 == 0){
-            Ganjil.push(nilai[i]);
-        }else{
             Genap.push(nilai[i]);
+        }else{
+            
+            Ganjil.push(nilai[i]);
         }
     }
     console.log(`Ganjil:[${Ganjil}]`);
