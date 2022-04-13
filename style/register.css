@@ -1,0 +1,30 @@
+.btn-register-signUp{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: black;
+    border: 1px solid transparent;
+    padding: 5px 25px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.btn-register-signUp:hover{
+    color:white;
+}
+.form-border{
+    margin-top: 20px;
+}
+.border-tombol{
+    margin-top: 10px;
+}
+.border-footer{
+    height: 18%;
+}

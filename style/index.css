@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+button{
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.first-border{
+    height: 100%;
+    display: flex;
+}
+.left-border{
+    width: 150%;
+    display: inline-block;
+    height: 100%;
+}
+.left-border-image{
+    background-image:linear-gradient(rgba(51, 39, 22, 0.803), rgba(35, 32, 25, 0.562)), url(../assets/LoginWallpaper.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-text{
+    /* padding-top: 70px;
+    padding-left: 40px; */
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    color: #e7e3e3c8;
+}
+.right-border{
+    display: inline-block;
+}
+.image-border{
+    width: 100%;
+    text-align: right;
+}
+.image-book{
+    width: 25%;
+}
+.login-border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-login{
+    font-size: 45px;
+    color: #424242;
+}
+.article-login{
+}
+.form-border{
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.form-input{
+    box-shadow:0 0 10px 0 rgb(0 0 0 / 10%);
+}
+.select-border{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.text-remember{
+    color: #D0CCCC;
+}
+.text-forgot{
+    text-decoration: none;
+    color:#424242;
+}
+.text-forgot:hover{
+    cursor: pointer;
+    color:#424242;
+}
+.border-login{
+    margin-right: 20px;
+}
+.btn-login{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: black;
+    border: 1px solid transparent;
+    padding: 5px 30px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.btn-login:hover{
+    color:white;
+}
+.btn-signUp{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #D0CCCC;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #D0CCCC;
+    padding: 5px 30px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+.btn-signUp:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+}
+.border-tombol{
+    margin-top: 30px;
+    display: flex;
+}
+.border-footer{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 60px;
+}
+.first-text{
+    height: 10%;
+    color: #D0CCCC;
+    font-family: 'Airbnb Cereal App';
+    font-weight: bold;
+}
+.second-text{
+    color: black;
+    font-family: 'Airbnb Cereal App';
+    font-weight: bold;  
+    text-decoration: none;
+}
+.second-text:hover{
+    color: black;
+}
+.and{
+    color: #D0CCCC;
+    font-weight: bold;
+}
