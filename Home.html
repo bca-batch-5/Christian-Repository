@@ -31,19 +31,39 @@
     <link rel="stylesheet" href="./style/carousle.css">
   </head>
   <body>
-    <div class="border-utama">
-      <div class="border-sidebar">
+    <!-- sideBar -->
+    <div class="border-sidebar" id="sidebar">
+      <div class="custom-container">
         <div>
-          <div class="border-hamburger">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
+          <div class="border-hamburger hamburger-sidebar" id="closeButton">
+            <div class="close-button"></div>
+            <div class="close-button-right"></div>
           </div>
         </div>
+        <!-- Image photo side bar -->
+        <div class="border-image-sidebar">
+          <div class="border-dalam-image"></div>
+        </div>
+        <div class="border-text-nama">
+          <p>Christian Bernard</p>
+        </div>
+        <section class="border-list-menu">
+          <div class="list-menu">
+            <p><a href="#" class="text-menu">Explore</a></p>
+          </div>
+          <div class="list-menu">
+            <p><a href="#" class="text-menu">History</a></p>
+          </div>
+          <div class="list-menu">
+            <p><a href="#" class="text-menu">Add Book</a></p>
+          </div>
+        </section>
       </div>
+    </div>
+    <div class="border-utama" id="borderUtama">
       <header class="border-header">
         <nav class="border-navbar">
-          <div class="border-hamburger">
+          <div class="border-hamburger" id="hamburger">
             <div class="hamburger"></div>
             <div class="hamburger"></div>
             <div class="hamburger"></div>
@@ -154,6 +174,7 @@
         </section>
       </main>
     </div>
+    <script src="./scripts/sidebar.js"></script>
     <script src="./scripts/carousel.js"></script>
   </body>
 </html>
