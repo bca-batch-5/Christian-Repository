@@ -28,8 +28,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/detail.css" />
+    <link rel="stylesheet" href="./style/modal.css">
   </head>
   <body>
+    <!-- Modal add -->
+    <div class="custom-modal" id="modal">
+      <div class="custom-modal-dialog" id="modalDialog">
+        <div class="modal-content custom-model-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Data</h5>
+            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close" id="buttonClose"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="border-input-form">
+                <label for="urlImage" class="label-form"> Url Image</label>
+                <input type="text" name="urlImage" id="urlImage" class="input-form">
+              </div>
+              
+              <div class="border-input-form">
+                <label for="title"  class="title-label-form"> Title</label>
+                <input type="text" name="title" id="title" class="input-form">
+              </div>
+              
+              <div>
+                <label for="Description" class="lable-description"> Description</label>
+                <textarea name="Description" id="Description" cols="80" rows="5" class="input-form"></textarea>
+              </div>
+              <div class="modal-footer custom-modal-footer">
+                <button type="submit" class="btn-save">Save changes</button>
+              </div>
+            </div>
+            </form>
+          </div>
+      </div>
+    </div>
     <!-- header image -->
     <header>
       <div class="container border-head-image">
@@ -39,7 +72,7 @@
           </div>
         </a>
         <div class="border-right-text">
-          <span class="right-text">Edit</span>
+          <span class="right-text" id="edit">Edit</span>
           <span class="right-text">Delete</span>
         </div>
       </div>
@@ -87,4 +120,5 @@
       </div>
     </main>
   </body>
+  <script src="./scripts/modalScript.js"></script>
 </html>

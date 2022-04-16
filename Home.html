@@ -29,6 +29,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/carousle.css">
+    <link rel="stylesheet" href="./style/modal.css">
   </head>
   <body>
     <!-- sideBar -->
@@ -55,27 +56,41 @@
             <p><a href="#" class="text-menu">History</a></p>
           </div>
           <div class="list-menu">
-            <p><a href="#" class="text-menu">Add Book</a></p>
+            <p><a href="#" class="text-menu" id="addBook">Add Book</a></p>
           </div>
         </section>
       </div>
     </div>
     <!-- Modal add -->
-    <div class="modal custom-modal" tabindex="-1">
-      <div class="custom-modal-dialog">
-        <div class="modal-content">
+    <div class="custom-modal" id="modal">
+      <div class="custom-modal-dialog" id="modalDialog">
+        <div class="modal-content custom-model-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title">Add Data</h5>
+            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close" id="buttonClose"></button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
+            <form>
+              <div class="border-input-form">
+                <label for="urlImage" class="label-form"> Url Image</label>
+                <input type="text" name="urlImage" id="urlImage" class="input-form">
+              </div>
+              
+              <div class="border-input-form">
+                <label for="title"  class="title-label-form"> Title</label>
+                <input type="text" name="title" id="title" class="input-form">
+              </div>
+              
+              <div>
+                <label for="Description" class="lable-description"> Description</label>
+                <textarea name="Description" id="Description" cols="80" rows="5" class="input-form"></textarea>
+              </div>
+              <div class="modal-footer custom-modal-footer">
+                <button type="submit" class="btn-save">Save changes</button>
+              </div>
+            </div>
+            </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
       </div>
     </div>
     <div class="border-utama" id="borderUtama">
@@ -194,6 +209,7 @@
         </section>
       </main>
     </div>
+    <script src="./scripts/modalScript.js"></script>
     <script src="./scripts/sidebar.js"></script>
     <script src="./scripts/carousel.js"></script>
   </body>
