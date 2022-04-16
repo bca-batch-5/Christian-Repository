@@ -11,7 +11,7 @@ html {
   /* margin-left: 350px; */
   height: 100%;
   width: 100%;
-  transition: all 0.9s ease;
+  transition: all 0.7s ease;
 }
 .border-header {
   width: 100%;
@@ -152,7 +152,7 @@ html {
   width: 347px;
   left: -400px;
   z-index: 1;
-  transition: all 0.8s ease;
+  transition: all 0.7s ease;
 }
 .text-judul {
   margin: 0;
@@ -219,7 +219,29 @@ html {
   color: #000000;
   margin-left: 20px;
 }
-.text-menu, .text-menu:hover{
+.text-menu,
+.text-menu:hover {
+  text-decoration: none;
+  color: black;
+}
+.custom-modal {
+  display: block !important;
+}
+.custom-modal-dialog {
+  width: 60% !important;
+  position: relative;
+  margin: 0.5rem;
+  pointer-events: none;
+  height: 100%;
+}
+@media (min-width: 576px) {
+  .custom-modal-dialog {
+    margin: 1.75rem auto;
+  }
+}
+
+.unlink,
+.unlink:hover {
   text-decoration: none;
   color: black;
 }
