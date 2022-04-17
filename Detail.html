@@ -31,29 +31,31 @@
     <link rel="stylesheet" href="./style/modal.css">
   </head>
   <body>
-    <!-- Modal add -->
+    <!-- Modal edit -->
     <div class="custom-modal" id="modal">
       <div class="custom-modal-dialog" id="modalDialog">
         <div class="modal-content custom-model-content">
           <div class="modal-header">
             <h5 class="modal-title">Add Data</h5>
-            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close" id="buttonClose"></button>
+            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close" id="buttonCloseEdit"></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="border-input-form">
                 <label for="urlImage" class="label-form"> Url Image</label>
-                <input type="text" name="urlImage" id="urlImage" class="input-form">
+                <input type="text" name="urlImage" id="urlImage" class="input-form" value="Https://dilan">
               </div>
               
               <div class="border-input-form">
                 <label for="title"  class="title-label-form"> Title</label>
-                <input type="text" name="title" id="title" class="input-form">
+                <input type="text" name="title" id="title" class="input-form" value="Dilan 1990">
               </div>
               
               <div>
                 <label for="Description" class="lable-description"> Description</label>
-                <textarea name="Description" id="Description" cols="80" rows="5" class="input-form"></textarea>
+                <textarea name="Description" id="Description" cols="80" rows="5" class="input-form">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quasi in reiciendis aliquam nulla itaque natus, eius laboriosam sint, nisi at quia aut ipsa. Necessitatibus facilis et ducimus quo ea!
+                </textarea>
               </div>
               <div class="modal-footer custom-modal-footer">
                 <button type="submit" class="btn-save">Save changes</button>
@@ -61,6 +63,24 @@
             </div>
             </form>
           </div>
+      </div>
+    </div>
+    <!-- Modal Delete -->
+    <div class="custom-modal-delete" id="modalDelete">
+      <div class="custom-modal-dialog-delete">
+        <div class="modal-content custom-model-content">
+          <div class="custom-modal-header">
+            <a href="Home.html"><button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close" id="buttonCloseDelete"></button></a>
+          </div>
+          <div class="modal-body custom-modal-body">
+            <div>
+              <img src="./assets/checked.png" alt="checked">
+            </div>
+            <div class="border-text-delete">
+              <p class="text-delete">Data <b>Dillan 1990</b> berhasil dihapus</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- header image -->
@@ -73,7 +93,7 @@
         </a>
         <div class="border-right-text">
           <span class="right-text" id="edit">Edit</span>
-          <span class="right-text">Delete</span>
+          <span class="right-text" id="delete">Delete</span>
         </div>
       </div>
     </header>
@@ -120,5 +140,5 @@
       </div>
     </main>
   </body>
-  <script src="./scripts/modalScript.js"></script>
+  <script src="./scripts/modalDetail.js"></script>
 </html>

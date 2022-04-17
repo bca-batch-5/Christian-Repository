@@ -2343,7 +2343,7 @@
     Flickity.prototype.next = function( isWrap ) {
       this.select( this.selectedIndex + 1, isWrap );
     };
-    
+    const select = document.getElementById("cell");
     Flickity.prototype.setSelectedCell = function() {
       this._removeSelectedCellClass();
       this.selectedCell = this.cells[ this.selectedIndex ];
